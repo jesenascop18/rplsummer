@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-test</title>
+    <link rel="stylesheet" href="styles/css.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <div class="test-container post-test-container">
+            <h1>POST-TEST</h1>
+            <div class="question">
+                <p>Ada berapakah proses didalam</p>
+                <p class="highlight">Software Processes?</p>
+            </div>
+            <div class="options">
+                <button class="option yellow" data-answer="wrong">A. 1 metode</button>
+                <button class="option blue" data-answer="right">B. 2 Metode</button>
+                <button class="option black" data-answer="wrong">C. 3 Metode</button>
+                <button class="option grey" data-answer="wrong">D. 4 Metode</button>
+            </div>
+            <div class="navigation">
+                <button class="nav-button" onclick="prevQuestion()">Kembali</button>
+                <button class="nav-button" onclick="nextQuestion()">Selanjutnya</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright 2024</p>
+    </footer>
+    <script src="script/jscript.js"></script>
+    <script>
+        const postTestQuestions = [
+            {
+                question: 'Ada berapakah proses didalam',
+                highlight: 'Software Processes?',
+                options: [
+                    { text: 'A. 1 metode', class: 'yellow', answer: 'wrong' },
+                    { text: 'B. 2 Metode', class: 'blue', answer: 'right' },
+                    { text: 'C. 3 Metode', class: 'black', answer: 'wrong' },
+                    { text: 'D. 4 Metode', class: 'grey', answer: 'wrong' },
+                ]
+            }
+        ];
+        startQuiz(postTestQuestions);
+    </script>
+</body>
+</html>
